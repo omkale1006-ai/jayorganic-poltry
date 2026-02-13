@@ -1,0 +1,129 @@
+:root {
+  --green-dark: #1f5d2d;
+  --green: #2f8f43;
+  --green-light: #dff4e3;
+  --text: #1a1a1a;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  background: #f8fff9;
+}
+
+.hero {
+  min-height: 78vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("https://images.unsplash.com/photo-1548550019-8f6f7f7f3f8f?auto=format&fit=crop&w=1600&q=80")
+      center/cover no-repeat;
+  color: var(--white);
+  padding: 1rem 2rem 4rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.2rem;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin-top: 5rem;
+}
+
+.tag {
+  color: #c9ffd4;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.hero-content h2 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin: 0.8rem 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--green);
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section h3 {
+  font-size: 1.7rem;
+  color: var(--green-dark);
+  margin-bottom: 0.8rem;
+}
+
+.alt {
+  background: var(--green-light);
+  border-radius: 14px;
+  margin-top: 1rem;
+}
+
+.cards {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--white);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--green-dark);
+  color: var(--white);
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 1rem 1rem 3rem;
+  }
+
+  .hero-content {
+    margin-top: 3.5rem;
+  }
+}
